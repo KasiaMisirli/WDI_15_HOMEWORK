@@ -42,3 +42,8 @@ for (var i = 0; i < favPets.length; i++){
   
   console.log('My ' + (i + 1) + stNdRd + ' choice is ' + favPets[i]);
 }
+
+
+
+//var suffix = ["st", "nd", "rd"];
+// console.log('My ' + (i + 1) + suffix[i] + ' choice is ' + favPets[i]);
