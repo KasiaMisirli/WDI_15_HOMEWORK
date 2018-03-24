@@ -6,10 +6,14 @@
 
 .nav {
     list-style-type: none;
-    margin: 0;
+    margin: 20px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
     
     
 }
@@ -19,11 +23,14 @@ li {
 }
 
 .bar {
-    display: block;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     padding: 14px 50px;
     text-decoration: none;
+    border-left: 1px solid white;
 }
 span {
     float: left;
@@ -33,7 +40,7 @@ span {
     line-height: 80%;
     color: grey;
 }
-.cont{
+.cont {
     text-align: right;
     border-bottom: 1px dotted black;
     color: red;
@@ -42,10 +49,12 @@ span {
     width: 100%;
     height: auto;
 }
-.sub{
-    display: block;
+.sub {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
 }
-main{
+main {
     
     padding: 30px;
     margin-top: 15px;
@@ -53,41 +62,48 @@ main{
     display: inline-block;
     width: 68%;
 }
-aside{
-   
+aside {
     padding: 30px;
     margin-top: 20px;
     vertical-align: top;
     display: inline-block;
     width: 30%;
 }
-article img{
+article img {
     width: 100%;
     height: auto;
 }
-.bottom{
+.bottom {
     text-decoration: none;
 }
 p {
     font-family: Cambria;
 }
-.mainbody{
+.mainbody {
     padding: 20px;
 
 }
-.pop{
+.pop {
     border-top: 1px dotted black;
 }
-.sar{
-    font-size: 40px;
+.sar {
+    font-size: 50px;
     color: red;
     font-family: Cambria;
+    margin-left: 20px;
 }
-date{
+date {
     color: grey;
     font-family: Arial;
     text-align: left;
 }
-.grey{
+.grey {
     color: gray;
+}
+.bet{
+    color:grey;
+}
+.bet {
+    font-size: 30px;
+    margin-left:15px;
 }
