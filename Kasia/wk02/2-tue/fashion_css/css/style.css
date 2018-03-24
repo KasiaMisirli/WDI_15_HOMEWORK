@@ -14,6 +14,7 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
+    font-size: 30px;
     
     
 }
@@ -28,9 +29,9 @@ li {
     flex-direction: row;
     color: white;
     /* text-align: center; */
-    padding: 14px 50px;
+    padding: 30px 50px;
     text-decoration: none;
-    border-left: 1px solid white;
+    
 }
 span {
     float: left;
@@ -40,33 +41,40 @@ span {
     line-height: 80%;
     color: grey;
 }
-.cont {
-    text-align: right;
+.more {
+    
     border-bottom: 1px dotted black;
     color: red;
+    text-decoration: none;
+    justify-content: right;
+    display: flex;
+    
 }
 .ad {
     width: 100%;
     height: auto;
+    margin-top: 20px;
 }
 .sub {
     display: flex;
     justify-content: right;
     flex-direction: column;
+    color: darkred;
 }
 main {
     
     padding: 30px;
     margin-top: 15px;
-    vertical-align: top;
-    display: inline-block;
     width: 68%;
+}
+.mainbody {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 aside {
     padding: 30px;
     margin-top: 20px;
-    vertical-align: top;
-    display: inline-block;
     width: 30%;
 }
 article img {
@@ -75,6 +83,7 @@ article img {
 }
 .bottom {
     text-decoration: none;
+    margin-top:20px;
 }
 p {
     font-family: Cambria;
@@ -85,6 +94,8 @@ p {
 }
 .pop {
     border-top: 1px dotted black;
+    color:grey;
+    
 }
 .sar {
     font-size: 50px;
@@ -96,6 +107,7 @@ date {
     color: grey;
     font-family: Arial;
     text-align: left;
+    margin-top: 20px;
 }
 .grey {
     color: gray;
@@ -106,4 +118,7 @@ date {
 .bet {
     font-size: 30px;
     margin-left:15px;
+}
+.heading {
+    color: grey;
 }
