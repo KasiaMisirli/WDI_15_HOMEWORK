@@ -8,7 +8,9 @@ body {
     flex-direction: row;
     text-align: center;
 }
-
+.acc {
+    background-color: white;
+}
 
 
 
@@ -30,11 +32,13 @@ body {
     
     width: 20em;
     height: 10em;
+    background-color: white;
  
 }
 .dispNumb2 {
     width: 20em;
     height: 10em;
+    background-color: white;
     
 }
 .checking {
@@ -119,6 +123,9 @@ body {
     border: 2px solid red;
     background-color: darkred;
     color: lightcoral;
+}
+.bal {
+    background-color: white;
 }
 @media (max-width:450px){
     body{

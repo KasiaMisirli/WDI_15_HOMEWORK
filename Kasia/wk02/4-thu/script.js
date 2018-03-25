@@ -17,11 +17,22 @@ var deposit = function(){
 savDepositBtn.addEventListener("click",deposit);
 
 var withdraw = function(){
-    balance = balance - Number(savInput.value);
-    console.log(balance);
-    var outcome = document.querySelector(".dispNumb").innerHTML;
-    document.getElementById("total").innerHTML = "$ "+balance;
-  
+    
+    if(balance - Number(savInput.value)<0){
+        //console.log("balance"+balance);
+        //document.getElementById("total").innerHTML = "Transaction denied. Please enter new amount.";
+       alert("Transaction denied. Please enter new amount.");
+    }else{
+        balance = balance - Number(savInput.value);
+        var outcome = document.querySelector(".dispNumb").innerHTML;
+        document.getElementById("total").innerHTML = "$ "+balance;
+    }
+    //console.log(balance);
+    // if(balance<=0){
+    //     console.log("not enough money!");
+    //     var bac= document.querySelector(".savings");
+    //     bac.style.backgroundColor="red";
+    //     }
 }
 savWithBtn.addEventListener("click",withdraw);
 
@@ -40,8 +51,12 @@ var deposit2 = function(){
 checkDepositBtn.addEventListener("click", deposit2);
 
 var withdrawChecking = function(){
-    witBalance = witBalance - Number(checkInput.value);
-    var outcome2 = document.querySelector(".dispNumb2").innerHTML;
-    document.getElementById("total2").innerHTML = "$ "+witBalance;
+    if(witBalance - Number(checkInput.value)<0){
+        alert("Transaction denied. Please enter new amount.");
+    }else{
+        witBalance = witBalance - Number(checkInput.value);
+        var outcome2 = document.querySelector(".dispNumb2").innerHTML;
+        document.getElementById("total2").innerHTML = "$ "+witBalance;
+    }
 }
 checkWithBtn.addEventListener("click",withdrawChecking);
