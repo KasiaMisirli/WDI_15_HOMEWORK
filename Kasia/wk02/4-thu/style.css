@@ -1,4 +1,7 @@
 
+body {
+    background-image: url(back.jpg);
+}
 .container{
     justify-content: center;
     display: flex;
@@ -10,8 +13,8 @@
 
 
 .savings {
-    background-color: rgb(214, 78, 78);
-    border: 3px solid rgb(51, 11, 11);
+    background-image: url(savings.jpg);
+    border: 3px solid  darkred;
     width: 40%;
     text-align: center;
     margin: 30px 35px;
@@ -19,6 +22,7 @@
     display: flex;
     flex-direction: column;
     height: 20em;
+    
     /* margin-bottom: 20px; */
 
 }
@@ -34,8 +38,8 @@
     
 }
 .checking {
-    background-color: yellow;
-    border: 3px solid black;
+    background-image: url(checking.jpeg);
+    border: 3px solid darkred;
     width: 40%;
     text-align: center;
     margin: 30px 35px;
@@ -74,14 +78,14 @@
 }
 .sav-inp {
     height: 4em;
-    width: 18.5em;
+    width: 68%;
     background-color: lightblue;
     
 }
 .chec-inp {
     height: 4em;
-    width: 18.5em;
-    background-color: lightblue;
+    width: 68%;
+    background-color: lightgoldenrodyellow;
 }
 .test {
     text-align: center;
@@ -92,5 +96,41 @@
     display: flex;
     flex-direction: row;
     text-align: center;
-   
+     
+}
+.foot {
+    text-align: center;
+    color: lightcoral;
+    background-color: darkred; 
+    border: 1px solid red;
+}
+.tel {
+    text-decoration: none;
+    color: indianred;
+}
+.mil {
+    border: 1px solid gold;
+    background-color: goldenrod;
+    font-family: Verdana;
+    text-align: center;
+}
+.headApp {
+    text-align: center;
+    border: 2px solid red;
+    background-color: darkred;
+    color: lightcoral;
+}
+@media (max-width:450px){
+    body{
+        background-color: lemonchiffon;
+    }
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .acc {
+        font-size: 90%;
+    }
 }
