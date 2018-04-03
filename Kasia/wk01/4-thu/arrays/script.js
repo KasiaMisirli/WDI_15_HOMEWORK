@@ -23,18 +23,18 @@ days_of_the_week.unshift(days_of_the_week[6]);
 days_of_the_week.pop();
 //3:
 var days_of_the_week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-var weekend= days_of_the_week.slice(5);
+var weekend = days_of_the_week.slice(5);
 console.log(weekend);
 days_of_the_week.pop();
 days_of_the_week.pop();
-var weekdays= days_of_the_week;
+var weekdays = days_of_the_week;
 console.log(weekdays);
 var twoArrays = [];
 twoArrays.push(weekdays);
 twoArrays.push(weekend);
 console.log(twoArrays);
 //4:
-var remainingArray= twoArrays.pop();
+var remainingArray = twoArrays.pop();
 console.log(remainingArray);
 console.log(twoArrays);
 //5:
