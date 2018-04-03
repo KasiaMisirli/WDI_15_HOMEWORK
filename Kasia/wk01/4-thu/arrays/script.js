@@ -16,13 +16,12 @@
 // 4. Remove either the weekdays or the weekends
 // Your choice...
 // 5. Sort the remaining days alphabetically
-
+//1:
 var days_of_the_week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-
+//2:
 days_of_the_week.unshift(days_of_the_week[6]);
 days_of_the_week.pop();
-console.log(days_of_the_week);
-
+//3:
 var days_of_the_week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 var weekend= days_of_the_week.slice(5);
 console.log(weekend);
@@ -30,5 +29,14 @@ days_of_the_week.pop();
 days_of_the_week.pop();
 var weekdays= days_of_the_week;
 console.log(weekdays);
+var twoArrays = [];
+twoArrays.push(weekdays);
+twoArrays.push(weekend);
+console.log(twoArrays);
+//4:
+var remainingArray= twoArrays.pop();
+console.log(remainingArray);
+console.log(twoArrays);
+//5:
 var sorted= weekdays.sort();
 console.log(sorted);
