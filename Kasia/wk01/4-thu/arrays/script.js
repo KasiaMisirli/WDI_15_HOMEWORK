@@ -38,5 +38,5 @@ var remainingArray = twoArrays.pop();
 console.log(remainingArray);
 console.log(twoArrays);
 //5:
-var sorted= weekdays.sort();
+var sorted = weekdays.sort();
 console.log(sorted);
