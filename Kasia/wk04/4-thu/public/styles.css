@@ -1,0 +1,29 @@
+body {
+    background-color: mistyrose;
+    text-align: center;
+}
+.display {
+    border: 3px solid mediumslateblue;
+    margin: 200px 300px 0 300px;
+    background-color: mediumpurple;
+    color: white;
+    border-radius: 20px;
+    font-family: Georgia;
+    
+}
+.button {
+    color: mediumslateblue;
+    border-radius: 5px;
+    font-family: Georgia;
+    background-color: mistyrose;
+}
+.input {
+    border-radius: 5px;
+    color: mediumvioletred;
+}
+p {
+    font-size: 25px;
+}
+h2 { 
+    font-size: 30px;
+}
