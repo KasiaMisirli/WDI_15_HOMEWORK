@@ -15,7 +15,12 @@
         <h1 class="heading" >Movie Search Engine</h1>
         <img src="/images/movie2.png" style="width:150px;height:120px;border:0;" alt="mov">
     </div>
-    <%= yield %>
+    <div class="outcome-layout">
+        <div class="yield-css">
+            <%= yield %>
+        </div>
+        <img class="poster" src=<%= @poster %>></img>
+    </div>
 </div>
     <div class="icons">
         <a href="/about">
@@ -27,7 +32,6 @@
         <a href="/contact">
             <img class="/contact" src="/images/contact.png" style= "width:150px;height:80px;border:0;" alt="Contact Us">
         </a>
-   
     </div>
     <footer>&copy;copyright</footer>
 </body>
