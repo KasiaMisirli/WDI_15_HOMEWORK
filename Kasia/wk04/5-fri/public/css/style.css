@@ -1,10 +1,54 @@
 body {
-    background-color: blanchedalmond;
+    /* background-image: url(/images/reel.png); */
+    /* background-size: cover; */
+    /* opacity: 0.6; */
+    /* z-index: 1; */
     text-align: center;
+    background-repeat: no-repeat;
+    /* background-position: initial;
+    position: absolute; */
+    /* display:block; */
+    background-color: lightgray;
+    font-family: 'Abril Fatface', cursive;
 }
 h1 {
-    color: blue;
+    color: black;
 }
 p {
-    color: darkblue;
+    color: black;
+    font-size: 20px;
+}
+.about {
+    padding-top: 15px;
+} 
+a {
+    text-decoration: none;
+}
+.icons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.top {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.heading {
+    margin: 30px 60px;
+}
+/* .container {
+    /* z-index: 2; */
+    /* position: relative; */
+    /* opacity: 0; */
+/* } */
+.ind {
+    padding: 20px 100px 20px 100px;
+}
+.about-layout {
+    padding: 20px 100px 20px 100px;
+}
+.container {
+    height: 450px;
+    display: block;
 }
