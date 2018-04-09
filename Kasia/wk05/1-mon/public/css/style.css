@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    font-family: 'Abril Fatface', cursive;
+}
+h1 {
+    color: black;
+}
+p {
+    color: black;
+    font-size: 20px;
+}
+.about {
+    padding-top: 15px;
+} 
+a {
+    text-decoration: none;
+}
+.icons {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.top {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.heading {
+    margin: 30px 60px;
+}
+.ind {
+    padding: 0 100px 20px 50px;
+}
+.about-layout {
+    padding: 20px 100px 20px 100px;
+}
+.container {
+    height: 500px;
+    display: block;
+}
+.yield-css {
+    padding: 20px 100px 20px 100px;
+}
+.outcome-layout {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.poster {
+    height: 300px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+.movie-title {
+    font-size: 30px;
+    margin-top: 0;
+}
+.movie-details {
+    text-align: right;
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 50px;
+}

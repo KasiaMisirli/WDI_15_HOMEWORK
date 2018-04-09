@@ -1,0 +1,8 @@
+
+
+ <% @multiple["Search"].each do |movie| %>
+<p><% @mov =   movie["Title"] %></p>
+
+<div><a name="output" href="http://omdbapi.com/?apikey=2f6435d9&t=<%= @mov %>"><%= movie["Title"]%></a></div>
+<% end %>
+
