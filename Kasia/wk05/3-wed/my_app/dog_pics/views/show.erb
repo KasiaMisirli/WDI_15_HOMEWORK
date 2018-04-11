@@ -1,0 +1,9 @@
+<%= @dog["name"] %>
+<a href=""><img src="<%= @dog['image_url']%>"></a>
+<form action="/dogs" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="hidden" name="id" value="<%= @dog['id']%>">
+    <button>delete</button>
+</form>
+
+<a href="/dogs/<%= @dog['id']%>/edit">edit</a>

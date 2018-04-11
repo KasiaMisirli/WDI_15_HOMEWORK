@@ -1,0 +1,11 @@
+<h1>DOG PICS APP</h1>
+<a href="/dogs/new">New Dog Post</a>
+<% @dogs.each do |dog|%>
+<h1>
+
+<a href="/dogs/<%= dog['id']%>"><%= dog["name"] %></h1></a>
+
+<a href=""><img src="<%= dog['image_url']%>"></a>
+<% end %>
+
+
