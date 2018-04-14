@@ -17,27 +17,48 @@
 # adam.introduce # "Hi my name is Adam. I am a Spider Monkey. 
 # I had fruit salad and banana milkshake for brunch"
 
-class Monkey
-    def initialize (name)
+class Monkey 
+    def initialize(name,species,foods_eaten)
         @name = name
-        @species = "monkey"
+        @species = species
         @foods_eaten = []
     end
-
     def eat(food)
         @foods_eaten.push(food) 
     end
-
-    def get_name #getter
-        return @name
-    end
-
     def introduce
-        print "Hi my name is #{name}. I am a #{@species}. 
-        I had #{@foods_eaten[0]} and #{@foods_eaten[1]} for brunch"
-    end
-
-    def set_name(new_name) #setter
-        @name = new_name
+        "my name is #{@name}, im #{@species} and i ate #{@foods_eaten} for brunch"
     end
 end
+
+
+
+# class Monkey
+#     def initialize (name,species)
+#         @name = name
+#         @species = species
+#         @foods_eaten = []
+#     end
+
+#     def eat(food)
+#         @foods_eaten.push(food) 
+#     end
+
+#     def get_name #getter
+#         return @name
+#     end
+
+#     def introduce
+#         print "Hi my name is #{name}. I am a #{@species}. 
+#         I had #{@foods_eaten[0]} and #{@foods_eaten[1]} for brunch"
+#     end
+
+#     def set_name(new_name) #setter
+#         @name = new_name
+#     end
+#     def introduce
+#         if @foods_eaten.length >1
+#             @intorduce = puts "Hello Im #{name},a #{species}. I had #{foods_eaten[0...-1].join(',')}and #{@foods_eaten.last}"
+# end
+
+# method initialize is same as the Money.new() method
