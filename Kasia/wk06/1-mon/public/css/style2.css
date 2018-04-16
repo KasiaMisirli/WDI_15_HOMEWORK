@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+    background-color: lightgray;
+    font-family: 'Abril Fatface', cursive;
+}
+.top {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.movie-details {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.outcome-left {
+    margin-top: 60px;
+    font-size: 20px;
+    padding-right: 30px;
+}
+.image_url {
+    height: 300px;
+}
+a {
+    text-decoration: none;
+}
+.about {
+    padding-top: 15px;
+} 
+.yield-css {
+    padding: 20px 100px 20px 100px;
+    height: 300px;
+}
+
+.heading {
+    margin: 30px 60px;
+}
