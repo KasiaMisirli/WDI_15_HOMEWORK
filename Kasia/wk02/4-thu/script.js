@@ -21,8 +21,13 @@ var withdraw = function(){
     if(balance - Number(savInput.value)<0){
         //console.log("balance"+balance);
         //document.getElementById("total").innerHTML = "Transaction denied. Please enter new amount.";
-       alert("Transaction denied. Please enter new amount.");
+     alert("Transaction denied. Please enter new amount.");
+    
+      //document.querySelector(".savings").style.backgroundImage ="none";
+       //document.querySelector(".savings").style.backgroundColor ="red";
+       //document.querySelector(".savings").style.backgroundColor = "rgba(255, 0, 0, 0)";
     }else{
+        
         balance = balance - Number(savInput.value);
         var outcome = document.querySelector(".dispNumb").innerHTML;
         document.getElementById("total").innerHTML = "$ "+balance;
@@ -60,3 +65,7 @@ var withdrawChecking = function(){
     }
 }
 checkWithBtn.addEventListener("click",withdrawChecking);
+
+
+//change the image to be invisible when on 0.
+//visible when about 0

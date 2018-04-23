@@ -3,7 +3,7 @@ print "Enter a file name: "
 
 input = gets.to_s
 k = 0
-File.readlines(input).each do |line|
+data.txt.readlines(input, "r").each do |line|
     k += 1
 end
 

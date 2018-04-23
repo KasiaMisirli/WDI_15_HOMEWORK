@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    background-color: plum;
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+}
+aside {
+    background-color: linen;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+
+}
+article {
+    background-color: mistyrose;
+    margin-bottom: 
+}

@@ -7,3 +7,12 @@
 </form>
 
 <a href="/dogs/<%= @dog['id']%>/edit">edit</a>
+
+<form action="/comments" method="post">
+    <input type="hidden" name="dog_id" value="<%= @dog['id']%>">
+    <textarea name="content"></textarea>
+    <button>post comment</button>
+</form>
+<% @comments.each do |comment|%>
+<p><%=comment['content']%></p>
+<%end%>

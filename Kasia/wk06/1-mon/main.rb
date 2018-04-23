@@ -43,3 +43,6 @@ get '/movie_info' do
     erb (:movie)
 end
 
+
+
+@multiple = HTTParty.get("http://omdbapi.com/?apikey=#{ENV['OMDB_API_KEY']}&s=#{params[:movie_title]}")

@@ -1,11 +1,7 @@
-* {
-    box-sizing:border-box;
-}
 .toplogo {
     background-image: url(../images/background.jpg);
     height: 150px;
     background-repeat: repeat-x;
-
 }
 .centerlogo{
     display: block;
@@ -18,42 +14,16 @@
     top: 20px;
     
 }
-h1{
-    font-size: 15px;
-}
 body {
     /* width:900px; */
     background-color:rgb(216, 216, 214);
     border: 1px solid black;
 }
-.important{
-    color: red;
-    font-weight: bold;
-}
-article{
-   
-    background-color: white;
-}
-container{
-    width: 80%;
-    margin: 0 auto;
+.page{
     padding:20px;
-}
-main {
-    display: inline-block;
-    vertical-align: block;
-    width: 68%;
-    padding: 20px 0 20px 0;
 
 }
-aside{
-    display: inline-block;
-    vertical-align: block;
-    width: 30%;
+main{
     background-color: white;
-    padding: 20px 0 20px 0;
 }
-
-
-
-
+.

@@ -102,7 +102,7 @@ inject
 users = {
   "Jonathan" => {
     :twitter => "tronathan",
-    :favorite_numbers => [12, 42, 75],
+    :favorite_numbers => [12, 42, 75]
   },
   "Erik" => {
     :twitter => "sferik",

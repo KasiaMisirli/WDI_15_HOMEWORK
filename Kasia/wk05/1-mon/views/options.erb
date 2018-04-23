@@ -1,5 +1,7 @@
 
 
-<% @multiple["Search"].each do |movie| %>
+<div class ="allmovies">
+    <% @multiple["Search"].each do |movie| %>
     <div><a name="output" href="/movie_info?movie_name=<%= movie["Title"] %>"><%= movie["Title"]%></a></div> 
-<% end %>
+    <% end %>
+</div>

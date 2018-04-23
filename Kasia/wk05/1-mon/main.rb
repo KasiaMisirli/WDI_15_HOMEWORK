@@ -31,4 +31,3 @@ get '/movie_info' do
     @poster = result.parsed_response["Poster"]
     erb (:movie)
 end
-

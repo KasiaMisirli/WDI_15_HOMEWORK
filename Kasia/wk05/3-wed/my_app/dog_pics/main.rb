@@ -53,3 +53,9 @@ put '/dogs/:id' do
   run_query(sql)
   redirect to ("/dogs/#{params[:id]}") 
 end
+
+post '/comments' do
+  sql = "INSERT INTO comments (content,dog_id) VALUES ('#{params[:content]}','#{params[:dog_id]}');"
+  run_query(sql)
+  redirect to ("/dogs/#{params[:dog_id]}")
+end
