@@ -1,0 +1,86 @@
+
+<form class="form" action="">
+    <input class="query"type="text">
+    <button>search</button>
+</form>
+<div class="results"></div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+var form = document.querySelector('.form');
+var query = document.querySelector('.query')
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+    console.log(query.input);
+    var options={
+        url:"http://omdbapi.com/?apikey=2f6435d9&s="+query.value
+    }
+    //callback-signature
+    var showResults = function(res){
+        res.Search.forEach(function(movie){
+        // console.log(movie.Title);
+            var newElement = document.createElement('p')
+            newElement.textContent=movie.Title
+            var resultsDiv=document.querySelector('.results');
+            resultsDiv.appendChild(newElement);
+        });
+    }
+
+$.ajax(options).done(showResults)
+});
+</script>
+
+<!--jquery-->
+
+<form class="form" action="">
+    <input class="query"type="text">
+    <button>search</button>
+</form>
+<div class="results"></div>
+        
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+    var $form = $('.form');
+    var $query = $('.query');
+    var $resultsDiv=$('.results');
+    $form.on('submit',function(event){
+        event.preventDefault();
+        // $(event.target).text('abc')
+        console.log($query.val());
+        //fetch data from omdb
+        var options={
+            url:"http://omdbapi.com/?apikey=2f6435d9&s="+$query.val()
+        }
+        //callback-signature
+        var showResults = function(res){
+            res.Search.forEach(function(movie){
+            // console.log(movie.Title);
+            // var newElement = document.createElement('p')
+            // newElement.textContent=movie.Title
+            // resultsDiv.appendChild(newElement);
+                var $h2 = $('<h2>').addClass('title')
+                    //search $('<p>') is create, $('<p>')[0],$('<p>abs</p>')[0] and 
+                var $a = $('<a>')
+                    .attr('href','http://www.imdb.com/title/'+movie.imdbID)
+                    .text(movie.Title);
+                    $h2.append($a);
+                    $resultsDiv.append($h2);
+            // $h2.appendTo($resultsDiv)    same as the one above
+            //prepend add to beggining
+            //$('<p><span>abs</p>')[0]
+            //$('<p>').text('abc')
+            //$('<p>').text('abc')
+            //$('<a>').attr('href',"www.google.com")
+            //$h2 = $('<h2>')  then $h2.append
+            //$a = $('<a>')
+            //$a.attr('href','www.google.com')
+            //$h2.append($a)
+            
+            });
+        }
+        $.ajax(options).done(showResults)
+        });
+        //$('p',{class:'nice'})
+        //$('<p>',{class:})
+</script>
+
