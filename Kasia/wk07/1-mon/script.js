@@ -14,7 +14,8 @@ var countIntegers = function(arr){
     }else{
       console.log("not integer"+element);
     }
-  });console.log(a2.length);
+  });
+  return a2.length;
 };
 countIntegers(arr);
 
@@ -25,8 +26,19 @@ countIntegers(arr);
 
 
 arr = [1, 2, 3, 4, 5];
-var getSquares = function(){
+var getSquares = function(arr){
 const map1 = arr.map(x => x * x);
 return map1;
+}
+getSquares(arr);
+
+
+
+
+arr = [1, 2, 3, 4, 5];
+var getSquares = function(arr){
+return  arr.map(function(number){
+    return number ** 2
+});
 }
 getSquares(arr);
