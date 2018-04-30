@@ -12,3 +12,13 @@ input.addEventListener("keyup", function(event) {
   }
 });
 $( ".square" ).append( "<body></body>" );
+
+
+var fun = function(){}
+    var divs = document.getElementById("cont").addEventListener("click", function(){
+    event.target.style.backgroundColor = "green";
+});
+
+// $(".square div").click(function() {
+//     $(this).backgroundColor=input;
+// });
