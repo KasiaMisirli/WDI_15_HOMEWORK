@@ -1,3 +1,9 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
 .color-display {
     border: 2px solid black;
     height: 50px;
@@ -5,9 +11,34 @@
 }
 
 .square {
-    border: 1px solid black;
+    border: 1px solid black; 
     /* border-radius: 10px; */
     height: 20px;
     width: 20px;
     display: inline-block;
+    margin: 0px;
+    padding: 0px;
+   
 }
+div {
+    display: inline-block;
+    
+}
+span {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+/* #cont div {
+    width:20px;height:20px;
+    border:black 1px solid;
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    margin:0px;
+    outline:none;
+    vertical-align: top;
+ }
+#cont{
+    line-height: 0px;
+} */

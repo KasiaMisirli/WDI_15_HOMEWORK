@@ -22,3 +22,5 @@ var fun = function(){}
 // $(".square div").click(function() {
 //     $(this).backgroundColor=input;
 // });
+
+
