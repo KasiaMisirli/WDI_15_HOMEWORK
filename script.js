@@ -11,3 +11,4 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("mybtn").click();
   }
 });
+$( ".square" ).append( "<body></body>" );
