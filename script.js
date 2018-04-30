@@ -16,7 +16,7 @@ $( ".square" ).append( "<body></body>" );
 
 var fun = function(){}
     var divs = document.getElementById("cont").addEventListener("click", function(){
-    event.target.style.backgroundColor = "green";
+    event.target.style.backgroundColor = input.value;
 });
 
 // $(".square div").click(function() {
