@@ -11,13 +11,21 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("mybtn").click();
   }
 });
-$( ".square" ).append( "<body></body>" );
 
-
-var fun = function(){}
-    var divs = document.getElementById("cont").addEventListener("click", function(){
+var fun = function(event){
+  // var divs = document.querySelector(".square").addEventListener("click", function(){
     event.target.style.backgroundColor = input.value;
-});
+  };
+
+for (var i = 0; i < 1000; i++){
+  var $square = $('<div>').addClass('square')
+  $square.hover(fun)
+  $("#cont").append($square);
+  // $("#cont").append("<div onclick='fun(event)' class='square'>");
+  }
+
+
+
 
 // $(".square div").click(function() {
 //     $(this).backgroundColor=input;
