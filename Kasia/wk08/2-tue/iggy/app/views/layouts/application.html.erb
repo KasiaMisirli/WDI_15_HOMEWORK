@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iggy</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body style="background-color:powderblue;">
+    <div><img height="300px"src="/ig.jpg" alt=""></div>
+      <a href="/dogs">Show all IG's!</a>
+      <a href="/">Home</a>
+      <a href="/about">About us</a>
+      <a href="/dogs/new">create new add</a>
+      <a href="/login">login</a>
+      <h1>User ID: <%= session[:user_id]%></h1>
+      <%= yield %>
+  </body>
+</html>

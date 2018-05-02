@@ -1,0 +1,9 @@
+<form action="/dogs/<%= @dog.id%>" method="post">
+    <input type="hidden"name="authenticity_token" value="<%= form_authenticity_token%>">
+    <input type="hidden" name="_method" value="put">
+    <label for="">name</label>
+    <textarea name="name" id="" cols="30" rows="10"><%= @dog.name%></textarea>
+    <label for="">description</label>
+    <textarea name="description" id="" cols="30" rows="10"><%= @dog.description %></textarea>
+    <button>update</button>
+</form>

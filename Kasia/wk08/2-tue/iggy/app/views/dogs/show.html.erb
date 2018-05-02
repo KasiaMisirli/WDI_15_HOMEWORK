@@ -1,0 +1,9 @@
+<%= @dog.name%>
+<%= @dog.description%>
+<form action="/dogs/<%= @dog.id%>" method="post">
+    <input type="hidden"name="authenticity_token" value="<%= form_authenticity_token%>">
+    <input type="hidden" name="_method" value="delete">
+    <button>delete</button>
+</form>
+
+<a href="/dogs/<%= @dog.id%>/edit">edit</a>
