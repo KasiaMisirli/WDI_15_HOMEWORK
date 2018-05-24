@@ -5,6 +5,7 @@ var pause = document.getElementById("pause")
 
 reset.addEventListener("click", function(){
   console.log("reset clicked")
+  reload()
 });
 
 start.addEventListener("click", function(){
@@ -20,11 +21,11 @@ var seconds = 0
 var timerId = 0
 var time = 0
 
-var nIntervId = undefined;
+var newIntervalId = undefined;
 
 function updateTime() {
-  if(nIntervId === undefined){
-  nIntervId = setInterval(timer,1000)
+  if(newIntervalId === undefined){
+  newIntervalId = setInterval(timer,1000)
   }
 }
 
@@ -34,5 +35,9 @@ function timer(){
 }
 
 function pauseTime(){
-  clearInterval(nIntervId)
+  clearInterval(newIntervalId)
+}
+
+function reload(){
+  window.location.reload(true);
 }
